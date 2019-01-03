@@ -1,7 +1,17 @@
 {
-    "extends": "./tsconfig",
-    "compilerOptions": {
-        "module": "es2015",
-        "moduleResolution": "node"
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "es2015",
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "paths": {
+      "~/*": [
+          "src/*"
+      ],
+      "*": [
+          "./node_modules/tns-core-modules/*",
+          "./node_modules/*"
+      ]
     }
+  }
 }
