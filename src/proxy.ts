@@ -1,9 +1,4 @@
 import 'nativescript-websockets'; // Need to be loaded before socketcluster
-
-if (!(<any>global).WebSocket) {
-    throw Error('The WebSocket is not available, be sure to import `nativescript-websockets` first');
-}
-
 import {
     ReduxDevtoolsExtension,
     ReduxDevtoolsExtensionConfig,
@@ -50,7 +45,8 @@ export class RemoteDevtoolsProxy implements ReduxDevtoolsExtension {
     }
 
     connect(options: ReduxDevtoolsExtensionConfig): ReduxDevtoolsExtensionConnection {
-        const connectOptions = Object.assign(this.defaultOptions, options);
+        // TODO: FIX TYPE
+        const connectOptions: any = Object.assign(this.defaultOptions, options);
 
         this.remotedev = connect(connectOptions);
 

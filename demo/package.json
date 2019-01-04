@@ -62,6 +62,7 @@
     "karma-jasmine-html-reporter": "^0.2.2",
     "nativescript-dev-typescript": "~0.7.0",
     "nativescript-dev-webpack": "^0.17.0",
+    "nativescript-remote-ngrx-devtools": "file:../src",
     "protractor": "~5.3.0",
     "remotedev": "^0.2.9",
     "socketcluster-client": "^14.2.1",

@@ -2,8 +2,8 @@
     "name": "nativescript-remote-ngrx-devtools",
     "version": "1.0.0",
     "description": "Your awesome NativeScript plugin.",
-    "main": "remote-ngrx-devtools",
-    "typings": "index.d.ts",
+    "main": "index.js",
+    "typings": "bundles/esm5/index.d.ts",
     "nativescript": {
         "platforms": {
             "android": "5.0.0",
@@ -44,14 +44,18 @@
     "homepage": "https://github.com/hafstad/nativescript-remote-ngrx-devtools",
     "readmeFilename": "README.md",
     "devDependencies": {
-        "tns-core-modules": "^5.1.0",
-        "tns-platform-declarations": "^5.1.0",
-        "typescript": "~2.8.2",
         "prompt": "^1.0.0",
         "rimraf": "^2.6.2",
+        "semver": "^5.6.0",
+        "tns-core-modules": "^5.1.0",
+        "tns-platform-declarations": "^5.1.0",
         "tslint": "^5.11.0",
-        "semver": "^5.6.0"
+        "typescript": "^3.1.6"
     },
-    "dependencies": {},
+    "dependencies": {
+        "@angular/core": "^7.1.4",
+        "@ngrx/store-devtools": "^7.0.0",
+        "remotedev": "^0.2.9"
+    },
     "bootstrapper": "nativescript-plugin-seed"
 }

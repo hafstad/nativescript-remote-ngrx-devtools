@@ -3,10 +3,10 @@ import { ɵngrx_modules_store_devtools_store_devtools_j as REDUX_DEVTOOLS_EXTENS
 import { RemoteDevtoolsProxyOptions, RemoteDevtoolsProxy, REMOTE_DEVTOOLS_PROXY_OPTIONS } from './proxy';
 
 @NgModule()
-export class NativeScriptRemoteReduxDevtoolsModule {
+export class NativescriptRemoteNgrxDevtoolsModule {
     public static forRoot(options: RemoteDevtoolsProxyOptions = {}): ModuleWithProviders {
         return {
-            ngModule: NativeScriptRemoteReduxDevtoolsModule,
+            ngModule: NativescriptRemoteNgrxDevtoolsModule,
             providers: [
                 {
                     provide: REMOTE_DEVTOOLS_PROXY_OPTIONS,

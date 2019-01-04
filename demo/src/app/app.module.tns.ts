@@ -17,7 +17,7 @@ import { counterReducer } from './counter/+state/counter.reducer';
 import {StoreDevtoolsModule} from '@ngrx/store-devtools';
 import {environment} from '../environments/environment';
 import {MyCounterComponent} from './counter/counter.component';
-import {NativeScriptRemoteReduxDevtoolsModule} from './nativescript-remote-redux-devtools/nativescript-remote-redux-devtools.module';
+import {NativescriptRemoteNgrxDevtoolsModule} from 'nativescript-remote-ngrx-devtools';
 
 @NgModule({
   declarations: [
@@ -34,7 +34,7 @@ import {NativeScriptRemoteReduxDevtoolsModule} from './nativescript-remote-redux
         maxAge: 25, // Retains last 25 states
         logOnly: environment.production, // Restrict extension to log-only mode
     }),
-    NativeScriptRemoteReduxDevtoolsModule.forRoot()
+    NativescriptRemoteNgrxDevtoolsModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent],
